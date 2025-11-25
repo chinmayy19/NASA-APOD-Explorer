@@ -75,5 +75,3 @@ This project demonstrates:
 - Semantic HTML and accessibility
 
 ---
-
-## Project Structure
