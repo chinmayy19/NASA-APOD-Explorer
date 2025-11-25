@@ -1,0 +1,69 @@
+# NASA APOD Explorer
+
+
+$env:NASA_API_KEY = 'VTAz4LbB3RuBeuuNrsm3PkSHSVUuua1G6OzzWMbF
+cd 'C:\Users\asusc\Downloads\Assignment\backend'
+mvn spring-boot:run
+
+$env:NASA_API_KEY = 'BG112S8nHhx2lPfsR43AGn62RpcXcSHbZtf3bIOb'
+cd 'C:\Users\asusc\Downloads\Assignment\backend'
+mvn spring-boot:run
+.\mvnw.cmd spring-boot:run 
+
+
+
+As part of this task, develop **NASA APOD Explorer**
+
+API INFO
+Use the public NASA API:
+**https://api.nasa.gov/**
+Specifically the APOD (Astronomy Picture of the Day) endpoint.
+
+# Specifications
+
+Your product should have 2 components
+
+- **Web service API** (serving RESTful APIs using nodejs / java / python)
+- **Front end layer** rendering content (HTML + CSS + JavaScript/TypeScript + toolsets like ReactJS or similar)
+
+## Web Service
+
+Develop a **web service component** that fetches data from the NASA API and exposes a set of simplified endpoints for the UI.
+
+Requirements:
+
+- Cache responses
+- Cache expiry + max size
+- Follow REST practices
+- Runs locally
+- Handle API Keys securely
+
+## UI Layer
+
+Ideas:
+
+- Dashboard showing today's APOD
+- Date picker to view past APODs
+- Gallery view of recent images
+- Detailed view for each image (explanation, title, copyright)
+- Great design, responsiveness.
+
+## Points to Note
+
+- Follow REST guidelines
+- Must run locally
+- Violations = invalid submission
+
+## Evaluation
+
+- Code quality
+- Extensible structure
+- Best practices
+- UI/UX
+- Performance
+
+## Submission
+
+- Public GitHub repo
+- Reply to email without changing subject
+- Include repo link

@@ -1,0 +1,10 @@
+#!/bin/sh
+MAVEN_PROJECTBASEDIR=`dirname "$0"`
+WRAPPER_DIR="$MAVEN_PROJECTBASEDIR/.mvn/wrapper"
+WRAPPER_JAR="$WRAPPER_DIR/maven-wrapper.jar"
+mkdir -p "$WRAPPER_DIR"
+if [ ! -f "$WRAPPER_JAR" ]; then
+	echo "Downloading maven wrapper jar..."
+	curl -s -L -o "$WRAPPER_JAR" "https://repo1.maven.org/maven2/io/takari/maven-wrapper/0.5.6/maven-wrapper-0.5.6.jar"
+fi
+exec java -jar "$WRAPPER_JAR" "$@"
